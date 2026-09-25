@@ -15,17 +15,21 @@
 </head>
 <body>
 
+  <!-- Canvas de Pétalas de Sakura em Segundo Plano -->
+  <canvas id="sakura-canvas"></canvas>
+
   <!-- ================= HEADER & NAV ================= -->
   <header class="header">
     <div class="container nav">
       <a href="#" class="logo">
-        <span class="logo-highlight">&lt;</span>CaioOliveira.sql<span class="logo-highlight"> /&gt;</span>
+        <span class="hanko-seal" title="データ • Dados & Precisão">数</span>
+        <span><span class="logo-highlight">&lt;</span>CaioOliveira.sql<span class="logo-highlight"> /&gt;</span></span>
       </a>
       <ul class="nav-links">
         <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
         <li><a href="#projetos" class="nav-link">Projetos</a></li>
         <li><a href="#sobre" class="nav-link">Sobre</a></li>
-        <li><a href="#contato" class="nav-link nav-cta">Falar Comigo</a></li>
+        <li><a href="#contato" class="nav-link nav-cta">Falar Comigo 🌸</a></li>
       </ul>
     </div>
   </header>
@@ -36,17 +40,19 @@
       <div class="container" style="display: flex; flex-direction: column; align-items: center;">
         <div class="hero-pill">
           <span class="hero-pill-dot"></span>
-          <span>Nova Iguaçu, RJ • Disponível para oportunidades Remotas e Híbridas</span>
+          <span>Nova Iguaçu, RJ • Disponível para oportunidades Remotas e Híbridas 🌸</span>
         </div>
 
         <h1 class="hero-title">
           Transformando dados brutos em decisões com <span class="gradient-text">SQL & Python</span>
         </h1>
 
+        <p class="hero-motto">「 精確と調和 」 • Precisão Técnica, Lógica Relacional e Visão de Negócio</p>
+
         <p class="hero-description">
-          Olá! Me chamo <strong>Caio Oliveira</strong>. Sou um programador com foco aprofundado em 
+          Olá! Me chamo <strong>Caio Oliveira</strong>. Sou um desenvolvedor focado em 
           <strong>SQL Analítico</strong>, modelagem de bancos relacionais e pipelines de dados com <strong>Python</strong>.
-          Capacidade prática de traduzir perguntas de negócio em queries estruturadas, seguras e performáticas.
+          Capacidade prática de traduzir perguntas complexas de negócio em consultas otimizadas, limpas e de alto impacto.
         </p>
 
         <div class="hero-actions">
@@ -56,7 +62,7 @@
               <polyline points="2 17 12 22 22 17"></polyline>
               <polyline points="2 12 12 17 22 12"></polyline>
             </svg>
-            Ver Projetos em SQL
+            Explorar Projetos SQL
           </a>
           <a href="https://github.com/Caio-Oliveira-50" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -76,7 +82,7 @@
         <div class="metrics-strip">
           <div class="metric-card">
             <div class="metric-title">Especialização Principal</div>
-            <div class="metric-value" style="color: var(--accent-cyan);">SQL Analítico & DDL</div>
+            <div class="metric-value" style="color: var(--sakura-pink);">SQL Analítico & DDL</div>
           </div>
           <div class="metric-card">
             <div class="metric-title">Técnicas Avançadas</div>
@@ -93,6 +99,9 @@
         </div>
       </div>
     </section>
+
+    <!-- Divisor Zen -->
+    <div class="zen-divider"><span class="zen-line"></span><span class="zen-dot">🌸</span><span class="zen-line"></span></div>
 
     <!-- ================= HABILIDADES ================= -->
     <section id="habilidades" class="section">
@@ -135,7 +144,7 @@
           <!-- Card 2: Python -->
           <div class="skill-card">
             <div class="skill-card-header">
-              <div class="skill-icon" style="color: var(--accent-blue); background: rgba(59, 130, 246, 0.15);">
+              <div class="skill-icon" style="color: var(--tech-cyan); background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.3);">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="16 18 22 12 16 6"></polyline>
                   <polyline points="8 6 2 12 8 18"></polyline>
@@ -158,7 +167,7 @@
           <!-- Card 3: Ferramentas & Práticas -->
           <div class="skill-card">
             <div class="skill-card-header">
-              <div class="skill-icon" style="color: var(--accent-green); background: rgba(16, 185, 129, 0.15);">
+              <div class="skill-icon" style="color: var(--tech-emerald); background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.3);">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                   <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -180,6 +189,9 @@
       </div>
     </section>
 
+    <!-- Divisor Zen -->
+    <div class="zen-divider"><span class="zen-line"></span><span class="zen-dot">🌸</span><span class="zen-line"></span></div>
+
     <!-- ================= PROJETOS EM DESTAQUE ================= -->
     <section id="projetos" class="section">
       <div class="container">
@@ -187,7 +199,7 @@
           <span class="section-tag">Casos Práticos</span>
           <h2 class="section-title">Projetos em Destaque</h2>
           <p class="section-subtitle">
-            Projetos estruturados simulando desafios reais de negócios, unindo lógica analítica, código bem documentado e conclusões orientadas a dados.
+            Cada projeto foi construído para simular um desafio real de negócios, unindo lógica analítica, código bem documentado e conclusões orientadas a dados.
           </p>
         </div>
 
@@ -295,11 +307,11 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
               <div class="insights-grid">
                 <div class="insights-callouts">
                   <div class="callout-box">
-                    <div class="callout-num" style="color: var(--accent-cyan);">38.4%</div>
+                    <div class="callout-num" style="color: var(--sakura-pink);">38.4%</div>
                     <div class="callout-label">Retenção Média no Mês 1</div>
                   </div>
                   <div class="callout-box green">
-                    <div class="callout-num" style="color: var(--accent-green);">+14.2%</div>
+                    <div class="callout-num" style="color: var(--tech-emerald);">+14.2%</div>
                     <div class="callout-label">Aumento na Safra com Campanha de Reativação</div>
                   </div>
                 </div>
@@ -349,7 +361,7 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
           <article class="project-card">
             <div class="project-header">
               <div>
-                <span class="project-badge-type" style="color: var(--accent-blue); background: rgba(59, 130, 246, 0.12); border-color: rgba(59, 130, 246, 0.25);">
+                <span class="project-badge-type" style="color: var(--tech-cyan); background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.3);">
                   Python & SQL Integration
                 </span>
                 <h3 class="project-title">Pipeline ETL Automatizado para Ingestão e Validação de Vendas</h3>
@@ -441,11 +453,11 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
               <div class="insights-grid">
                 <div class="insights-callouts">
                   <div class="callout-box green">
-                    <div class="callout-num" style="color: var(--accent-green);">100%</div>
+                    <div class="callout-num" style="color: var(--tech-emerald);">100%</div>
                     <div class="callout-label">Automação do fluxo diário de dados</div>
                   </div>
                   <div class="callout-box">
-                    <div class="callout-num" style="color: var(--accent-blue);">0</div>
+                    <div class="callout-num" style="color: var(--tech-cyan);">0</div>
                     <div class="callout-label">Erros de integridade no banco</div>
                   </div>
                 </div>
@@ -461,7 +473,7 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
           <article class="project-card">
             <div class="project-header">
               <div>
-                <span class="project-badge-type" style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.12); border-color: rgba(139, 92, 246, 0.25);">
+                <span class="project-badge-type" style="color: var(--sakura-rose); background: rgba(251, 113, 133, 0.12); border-color: rgba(251, 113, 133, 0.3);">
                   Engenharia & Modelagem de Dados
                 </span>
                 <h3 class="project-title">Modelagem de Banco de Dados de Logística (Normalização 3FN)</h3>
@@ -556,11 +568,11 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
               <div class="insights-grid">
                 <div class="insights-callouts">
                   <div class="callout-box green">
-                    <div class="callout-num" style="color: var(--accent-green);">-85%</div>
+                    <div class="callout-num" style="color: var(--tech-emerald);">-85%</div>
                     <div class="callout-label">Tempo de resposta nas queries de status com índice B-Tree</div>
                   </div>
                   <div class="callout-box">
-                    <div class="callout-num" style="color: var(--accent-cyan);">3FN</div>
+                    <div class="callout-num" style="color: var(--sakura-pink);">3FN</div>
                     <div class="callout-label">Eliminação total de redundância de dados</div>
                   </div>
                 </div>
@@ -572,6 +584,9 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
       </div>
     </section>
 
+    <!-- Divisor Zen -->
+    <div class="zen-divider"><span class="zen-line"></span><span class="zen-dot">🌸</span><span class="zen-line"></span></div>
+
     <!-- ================= SOBRE MIM ================= -->
     <section id="sobre" class="section">
       <div class="container">
@@ -580,7 +595,7 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
             <span class="section-tag">Trajetória</span>
             <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Sobre Mim</h2>
             <p>
-              Olá! Sou <strong>Caio Oliveira</strong>, residente em Nova Iguaçu - RJ. Sou um programador em início de carreira com dedicação contínua aos estudos de desenvolvimento, focado em <strong>bancos de dados relacionais e análise prática com SQL e Python</strong>.
+              Olá! Sou <strong>Caio Oliveira</strong>, residente em Nova Iguaçu - RJ. Sou um programador com dedicação contínua aos estudos de desenvolvimento de software, focado em <strong>bancos de dados relacionais e análise prática com SQL e Python</strong>.
             </p>
             <p>
               Meu objetivo é ajudar empresas a tomarem decisões baseadas em dados confiáveis: modelar bancos com integridade referencial, extrair métricas de negócio através de queries performáticas e automatizar fluxos de dados com scripts Python.
@@ -594,25 +609,25 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
             <h4>Foco Atual de Estudos</h4>
             <ul class="about-list">
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 Otimização e planos de execução (EXPLAIN ANALYZE)
               </li>
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 PostgreSQL avançado, CTEs e Window Functions
               </li>
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 Bibliotecas analíticas Python (Pandas e SQLAlchemy)
               </li>
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2">
                   <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
                 Versionamento e colaboração ágil com Git & GitHub
@@ -627,10 +642,10 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
     <section id="contato" class="contact-section">
       <div class="container">
         <div class="contact-card">
-          <span class="section-tag">Vamos conversar?</span>
-          <h2 class="section-title">Entre em Contato</h2>
+          <span class="section-tag">Contato & Conexão</span>
+          <h2 class="section-title">Vamos conversar? 🌸</h2>
           <p style="color: var(--text-muted); font-size: 1rem; margin-top: 8px;">
-            Estou disponível para novas oportunidades, vagas de estágio / júnior e projetos. Fique à vontade para me mandar uma mensagem!
+            Estou disponível para novas oportunidades, vagas de estágio / júnior e projetos freelance. Fique à vontade para me mandar uma mensagem!
           </p>
 
           <div class="contact-channels">
@@ -661,7 +676,7 @@ atividades_pedidos <span class="sql-keyword">AS</span> (
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Caio Oliveira | Desenvolvido com HTML, CSS e JavaScript puro. Focado em SQL & Dados.</p>
+      <p>&copy; 2026 Caio Oliveira • 桜 Zen Tech Portfolio • Desenvolvido com HTML, CSS e JavaScript puro.</p>
     </div>
   </footer>
 
