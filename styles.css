@@ -4,14 +4,14 @@
    ========================================================================== */
 
 :root {
-  /* Paleta Base: Tinta Sumi-e Profunda e Azul Noite */
-  --bg-primary: #07090f;
-  --bg-secondary: #0e121d;
-  --bg-card: rgba(15, 20, 32, 0.75);
-  --bg-card-hover: rgba(24, 30, 48, 0.85);
-  --bg-code: #05070c;
-  --border-color: rgba(244, 114, 182, 0.15);
-  --border-subtle: rgba(255, 255, 255, 0.07);
+  /* Paleta Base: Tinta Sumi-e Profunda e Noite Cósmica */
+  --bg-primary: #06080e;
+  --bg-secondary: #0c101a;
+  --bg-card: rgba(13, 17, 28, 0.78);
+  --bg-card-hover: rgba(22, 28, 44, 0.88);
+  --bg-code: #04060a;
+  --border-color: rgba(244, 114, 182, 0.16);
+  --border-subtle: rgba(255, 255, 255, 0.08);
   --border-focus: #f472b6;
 
   /* Tipografia */
@@ -30,7 +30,7 @@
 
   /* Gradientes Nobres */
   --gradient-sakura: linear-gradient(135deg, #f472b6 0%, #fb7185 45%, #38bdf8 100%);
-  --gradient-badge: linear-gradient(135deg, rgba(244, 114, 182, 0.15) 0%, rgba(56, 189, 248, 0.12) 100%);
+  --gradient-badge: linear-gradient(135deg, rgba(244, 114, 182, 0.18) 0%, rgba(56, 189, 248, 0.14) 100%);
   --gradient-hanko: linear-gradient(145deg, #e11d48, #be123c);
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -59,14 +59,118 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
-  background-image: 
-    radial-gradient(at 10% 15%, rgba(244, 114, 182, 0.08) 0px, transparent 45%),
-    radial-gradient(at 90% 80%, rgba(56, 189, 248, 0.06) 0px, transparent 50%),
-    radial-gradient(at 50% 50%, rgba(251, 113, 133, 0.04) 0px, transparent 60%);
-  background-attachment: fixed;
 }
 
-/* Canvas das Pétalas de Sakura Flutuantes */
+/* ==========================================================================
+   FUNDO VIVO: MESH GRADIENT & AURORA ANIMADA EM CSS
+   ========================================================================== */
+.ambient-glow-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(110px);
+  opacity: 0.65;
+  animation: floatOrb 25s infinite alternate ease-in-out;
+  will-change: transform;
+}
+
+/* Orbe 1: Sakura Rose no canto superior */
+.orb-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.32) 0%, rgba(244, 114, 182, 0.08) 50%, transparent 70%);
+  top: -120px;
+  left: -80px;
+  animation-duration: 22s;
+}
+
+/* Orbe 2: Ciano Tecnológico no canto inferior direito */
+.orb-2 {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.28) 0%, rgba(56, 189, 248, 0.06) 55%, transparent 75%);
+  bottom: -150px;
+  right: -100px;
+  animation-duration: 28s;
+  animation-delay: -7s;
+}
+
+/* Orbe 3: Violeta Crepúsculo no centro */
+.orb-3 {
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.22) 0%, rgba(139, 92, 246, 0.05) 50%, transparent 70%);
+  top: 35%;
+  left: 35%;
+  animation-duration: 32s;
+  animation-delay: -14s;
+}
+
+/* Orbe 4: Coral / Blush sutil à esquerda */
+.orb-4 {
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(251, 113, 133, 0.25) 0%, transparent 70%);
+  bottom: 15%;
+  left: 5%;
+  animation-duration: 24s;
+  animation-delay: -5s;
+}
+
+/* Círculo Zen Ensō como marca d'água no fundo */
+.enso-symbol {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  border: 1px solid rgba(244, 114, 182, 0.07);
+  box-shadow: 
+    0 0 80px rgba(244, 114, 182, 0.04),
+    inset 0 0 80px rgba(56, 189, 248, 0.03);
+  animation: ensoBreathe 18s infinite ease-in-out alternate;
+  pointer-events: none;
+}
+
+@keyframes floatOrb {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(90px, 70px, 0) scale(1.18);
+  }
+  66% {
+    transform: translate3d(-70px, 110px, 0) scale(0.92);
+  }
+  100% {
+    transform: translate3d(50px, -60px, 0) scale(1.08);
+  }
+}
+
+@keyframes ensoBreathe {
+  0% {
+    transform: translate(-50%, -50%) scale(0.95) rotate(0deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.05) rotate(15deg);
+    opacity: 0.85;
+  }
+}
+
+/* Canvas das Pétalas de Sakura & Vagalumes Flutuantes */
 #sakura-canvas {
   position: fixed;
   top: 0;
@@ -75,7 +179,7 @@ body {
   height: 100%;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 /* Container Principal */
@@ -93,9 +197,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  background-color: rgba(7, 9, 15, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-color: rgba(6, 8, 14, 0.85);
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -146,7 +250,7 @@ body {
   border: 1px solid rgba(244, 114, 182, 0.35);
   padding: 8px 18px;
   border-radius: 9999px;
-  box-shadow: 0 0 15px rgba(244, 114, 182, 0.1);
+  box-shadow: 0 0 15px rgba(244, 114, 182, 0.12);
 }
 
 .nav-cta:hover {
@@ -171,7 +275,7 @@ body {
   font-size: 0.8rem;
   font-weight: 700;
   line-height: 1;
-  background: rgba(225, 29, 72, 0.1);
+  background: rgba(225, 29, 72, 0.12);
   box-shadow: inset 0 0 6px rgba(225, 29, 72, 0.25);
   user-select: none;
 }
@@ -198,7 +302,7 @@ body {
   color: var(--sakura-blush);
   font-weight: 500;
   margin-bottom: 24px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
 }
 
 .hero-pill-dot {
@@ -222,7 +326,7 @@ body {
   background: var(--gradient-sakura);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 14px rgba(244, 114, 182, 0.25));
+  filter: drop-shadow(0 2px 14px rgba(244, 114, 182, 0.3));
 }
 
 .hero-motto {
@@ -268,26 +372,26 @@ body {
 .btn-primary {
   background: var(--gradient-sakura);
   color: #fff;
-  box-shadow: 0 6px 24px rgba(244, 114, 182, 0.32);
+  box-shadow: 0 6px 24px rgba(244, 114, 182, 0.35);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(244, 114, 182, 0.45);
+  box-shadow: 0 8px 30px rgba(244, 114, 182, 0.5);
 }
 
 .btn-secondary {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-card);
   color: var(--text-main);
   border: 1px solid var(--border-color);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
 }
 
 .btn-secondary:hover {
   background-color: var(--bg-card-hover);
   border-color: var(--sakura-pink);
   transform: translateY(-2px);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
 }
 
 /* Faixa de Métricas Rápidas */
@@ -301,7 +405,7 @@ body {
 
 .metric-card {
   background: var(--bg-card);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border-color);
   padding: 22px;
   border-radius: var(--radius-md);
@@ -310,9 +414,9 @@ body {
 }
 
 .metric-card:hover {
-  border-color: rgba(244, 114, 182, 0.4);
+  border-color: rgba(244, 114, 182, 0.45);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.3);
 }
 
 .metric-title {
@@ -337,7 +441,7 @@ body {
   justify-content: center;
   gap: 12px;
   margin: 20px auto 40px;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .zen-line {
@@ -396,7 +500,7 @@ body {
 
 .skill-card {
   background: var(--bg-card);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 30px;
@@ -471,7 +575,7 @@ body {
 
 .project-card {
   background: var(--bg-card);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -548,7 +652,7 @@ body {
 /* Abas Interativas dos Projetos */
 .project-tabs {
   display: flex;
-  background: rgba(0, 0, 0, 0.28);
+  background: rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid var(--border-color);
   padding: 0 34px;
   gap: 22px;
@@ -759,7 +863,7 @@ body {
 /* Sobre Mim */
 .about-box {
   background: var(--bg-card);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 38px;
@@ -804,7 +908,7 @@ body {
 /* Contato / CTA Final */
 .contact-section {
   text-align: center;
-  background: linear-gradient(180deg, transparent 0%, rgba(244, 114, 182, 0.06) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(244, 114, 182, 0.08) 100%);
   border-top: 1px solid var(--border-color);
   padding: 95px 0;
   position: relative;
@@ -814,7 +918,7 @@ body {
   max-width: 620px;
   margin: 0 auto;
   background: var(--bg-card);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 44px 34px;
