@@ -10,9 +10,9 @@
   --bg-card: rgba(13, 17, 28, 0.78);
   --bg-card-hover: rgba(22, 28, 44, 0.88);
   --bg-code: #04060a;
-  --border-color: rgba(244, 114, 182, 0.16);
+  --border-color: rgba(0, 206, 200, 0.16);
   --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-focus: #f472b6;
+  --border-focus: #00CEC8;
 
   /* Tipografia */
   --text-main: #f8fafc;
@@ -20,7 +20,7 @@
   --text-subtle: #64748b;
 
   /* Acentos Sakura & Cyber-Ciano */
-  --sakura-pink: #f472b6;
+  --sakura-pink: #00CEC8;
   --sakura-rose: #fb7185;
   --sakura-blush: #fda4af;
   --sakura-vermilion: #e11d48;
@@ -29,8 +29,8 @@
   --tech-emerald: #10b981;
 
   /* Gradientes Nobres */
-  --gradient-sakura: linear-gradient(135deg, #f472b6 0%, #fb7185 45%, #38bdf8 100%);
-  --gradient-badge: linear-gradient(135deg, rgba(244, 114, 182, 0.18) 0%, rgba(56, 189, 248, 0.14) 100%);
+  --gradient-sakura: linear-gradient(135deg, #00CEC8 0%, #0ea5e9 50%, #38bdf8 100%);
+  --gradient-badge: linear-gradient(135deg, rgba(0, 206, 200, 0.18) 0%, rgba(56, 189, 248, 0.14) 100%);
   --gradient-hanko: linear-gradient(145deg, #e11d48, #be123c);
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -88,7 +88,7 @@ body {
 .orb-1 {
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(244, 114, 182, 0.32) 0%, rgba(244, 114, 182, 0.08) 50%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 206, 200, 0.32) 0%, rgba(0, 206, 200, 0.08) 50%, transparent 70%);
   top: -120px;
   left: -80px;
   animation-duration: 22s;
@@ -136,9 +136,9 @@ body {
   width: 750px;
   height: 750px;
   border-radius: 50%;
-  border: 1px solid rgba(244, 114, 182, 0.07);
+  border: 1px solid rgba(0, 206, 200, 0.07);
   box-shadow: 
-    0 0 80px rgba(244, 114, 182, 0.04),
+    0 0 80px rgba(0, 206, 200, 0.04),
     inset 0 0 80px rgba(56, 189, 248, 0.03);
   animation: ensoBreathe 18s infinite ease-in-out alternate;
   pointer-events: none;
@@ -223,7 +223,7 @@ body {
 
 .logo-highlight {
   color: var(--sakura-pink);
-  text-shadow: 0 0 12px rgba(244, 114, 182, 0.4);
+  text-shadow: 0 0 12px rgba(0, 206, 200, 0.4);
 }
 
 .nav-links {
@@ -245,19 +245,19 @@ body {
 }
 
 .nav-cta {
-  background: rgba(244, 114, 182, 0.12);
+  background: rgba(0, 206, 200, 0.12);
   color: var(--sakura-pink) !important;
-  border: 1px solid rgba(244, 114, 182, 0.35);
+  border: 1px solid rgba(0, 206, 200, 0.35);
   padding: 8px 18px;
   border-radius: 9999px;
-  box-shadow: 0 0 15px rgba(244, 114, 182, 0.12);
+  box-shadow: 0 0 15px rgba(0, 206, 200, 0.12);
 }
 
 .nav-cta:hover {
   background: var(--gradient-sakura);
   color: #fff !important;
   border-color: transparent;
-  box-shadow: 0 4px 20px rgba(244, 114, 182, 0.35);
+  box-shadow: 0 4px 20px rgba(0, 206, 200, 0.35);
   transform: translateY(-1px);
 }
 
@@ -297,7 +297,7 @@ body {
   padding: 7px 18px;
   border-radius: 9999px;
   background: var(--gradient-badge);
-  border: 1px solid rgba(244, 114, 182, 0.3);
+  border: 1px solid rgba(0, 206, 200, 0.3);
   font-size: 0.85rem;
   color: var(--sakura-blush);
   font-weight: 500;
@@ -326,7 +326,7 @@ body {
   background: var(--gradient-sakura);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 14px rgba(244, 114, 182, 0.3));
+  filter: drop-shadow(0 2px 14px rgba(0, 206, 200, 0.3));
 }
 
 .hero-motto {
@@ -372,12 +372,12 @@ body {
 .btn-primary {
   background: var(--gradient-sakura);
   color: #fff;
-  box-shadow: 0 6px 24px rgba(244, 114, 182, 0.35);
+  box-shadow: 0 6px 24px rgba(0, 206, 200, 0.35);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(244, 114, 182, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 206, 200, 0.5);
 }
 
 .btn-secondary {
@@ -414,7 +414,7 @@ body {
 }
 
 .metric-card:hover {
-  border-color: rgba(244, 114, 182, 0.45);
+  border-color: rgba(0, 206, 200, 0.45);
   transform: translateY(-2px);
   box-shadow: 0 8px 26px rgba(0, 0, 0, 0.3);
 }
@@ -508,7 +508,7 @@ body {
 }
 
 .skill-card:hover {
-  border-color: rgba(244, 114, 182, 0.45);
+  border-color: rgba(0, 206, 200, 0.45);
   transform: translateY(-5px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
 }
@@ -530,7 +530,7 @@ body {
   background: var(--gradient-badge);
   color: var(--sakura-pink);
   font-size: 1.3rem;
-  border: 1px solid rgba(244, 114, 182, 0.25);
+  border: 1px solid rgba(0, 206, 200, 0.25);
 }
 
 .skill-card-title {
@@ -556,8 +556,8 @@ body {
 }
 
 .tag.highlight {
-  background: rgba(244, 114, 182, 0.12);
-  border-color: rgba(244, 114, 182, 0.35);
+  background: rgba(0, 206, 200, 0.12);
+  border-color: rgba(0, 206, 200, 0.35);
   color: var(--sakura-blush);
 }
 
@@ -583,7 +583,7 @@ body {
 }
 
 .project-card:hover {
-  border-color: rgba(244, 114, 182, 0.45);
+  border-color: rgba(0, 206, 200, 0.45);
   box-shadow: 0 20px 42px rgba(0, 0, 0, 0.4);
 }
 
@@ -601,8 +601,8 @@ body {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--sakura-pink);
-  background: rgba(244, 114, 182, 0.12);
-  border: 1px solid rgba(244, 114, 182, 0.35);
+  background: rgba(0, 206, 200, 0.12);
+  border: 1px solid rgba(0, 206, 200, 0.35);
   padding: 4px 12px;
   border-radius: 9999px;
   margin-bottom: 10px;
@@ -643,10 +643,10 @@ body {
 }
 
 .project-link-btn:hover {
-  background: rgba(244, 114, 182, 0.15);
+  background: rgba(0, 206, 200, 0.15);
   border-color: var(--sakura-pink);
   color: #fff;
-  box-shadow: 0 0 14px rgba(244, 114, 182, 0.25);
+  box-shadow: 0 0 14px rgba(0, 206, 200, 0.25);
 }
 
 /* Abas Interativas dos Projetos */
@@ -680,7 +680,7 @@ body {
 .tab-btn.active {
   color: var(--sakura-pink);
   border-bottom-color: var(--sakura-pink);
-  text-shadow: 0 0 10px rgba(244, 114, 182, 0.35);
+  text-shadow: 0 0 10px rgba(0, 206, 200, 0.35);
 }
 
 .project-tab-content {
@@ -771,7 +771,7 @@ body {
 }
 
 .copy-btn:hover {
-  background: rgba(244, 114, 182, 0.15);
+  background: rgba(0, 206, 200, 0.15);
   color: var(--sakura-blush);
   border-color: var(--sakura-pink);
 }
@@ -806,8 +806,8 @@ body {
 }
 
 .callout-box {
-  background: rgba(244, 114, 182, 0.06);
-  border: 1px solid rgba(244, 114, 182, 0.25);
+  background: rgba(0, 206, 200, 0.06);
+  border: 1px solid rgba(0, 206, 200, 0.25);
   padding: 18px;
   border-radius: var(--radius-md);
 }
@@ -857,7 +857,7 @@ body {
 }
 
 .data-table tr:hover td {
-  background: rgba(244, 114, 182, 0.04);
+  background: rgba(0, 206, 200, 0.04);
 }
 
 /* Sobre Mim */
@@ -908,7 +908,7 @@ body {
 /* Contato / CTA Final */
 .contact-section {
   text-align: center;
-  background: linear-gradient(180deg, transparent 0%, rgba(244, 114, 182, 0.08) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 206, 200, 0.08) 100%);
   border-top: 1px solid var(--border-color);
   padding: 95px 0;
   position: relative;
