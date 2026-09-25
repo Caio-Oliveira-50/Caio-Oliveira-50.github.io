@@ -1,6 +1,6 @@
 /**
- * Portfolio SQL & Python - Interações & Efeitos Zen Sakura
- * Animação de Pétalas de Cerejeira (Sakura) e Vagalumes (Hotaru)
+ * Portfolio SQL & Python - Interações & Efeitos Zen Cyber-Jade (#00CEC8)
+ * Animação de Pétalas Luminosas e Vagalumes (Hotaru)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 2. Botão de Copiar Código com Feedback Visual
+  // 2. Botão de Copiar Código com Feedback Visual (#00CEC8)
   // =========================================================================
   const copyButtons = document.querySelectorAll('.copy-btn');
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00CEC8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="20 6 9 17 4 12"></polyline>
           </svg>
-          <span style="color: #00CEC8;">Copiado! 🌸</span>
+          <span style="color: #00CEC8;">Copiado! ✧</span>
         `;
         
         setTimeout(() => {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 3. Sistema Atmosférico de Sakura (Pétalas) e Hotaru (Vagalumes de Luz)
+  // 3. Sistema Atmosférico: Pétalas Litorâneas/Jade (#00CEC8) e Hotaru (Vagalumes)
   // =========================================================================
   const canvas = document.getElementById('sakura-canvas');
   if (!canvas) return;
@@ -80,14 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
     height = canvas.height = window.innerHeight;
   });
 
-  // Quantidade equilibrada para performance cristalina
   const TOTAL_PETALS = Math.min(26, Math.floor(window.innerWidth / 45));
   const TOTAL_FIREFLIES = 14;
 
   const petals = [];
   const fireflies = [];
 
-  // --- Classe das Pétalas de Cerejeira ---
+  // --- Classe das Pétalas com tons Turquesa / Cyber-Jade (#00CEC8) ---
   class Petal {
     constructor() {
       this.reset(true);
@@ -103,9 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
       this.rotationSpeed = (Math.random() - 0.5) * 0.022;
       this.oscillationSpeed = Math.random() * 0.02 + 0.012;
       this.oscillationPhase = Math.random() * Math.PI * 2;
+      // Variações elegantes de #00CEC8 e turquesa translúcido
       this.color = Math.random() > 0.45 
-        ? 'rgba(251, 182, 206, ' + (Math.random() * 0.35 + 0.35) + ')' 
-        : 'rgba(0, 206, 200, ' + (Math.random() * 0.3 + 0.28) + ')';
+        ? 'rgba(0, 206, 200, ' + (Math.random() * 0.35 + 0.35) + ')' 
+        : 'rgba(94, 234, 212, ' + (Math.random() * 0.3 + 0.28) + ')';
     }
 
     update() {
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- Classe dos Vagalumes / Pontos de Luz Suaves (Hotaru) ---
+  // --- Classe dos Vagalumes de Luz (Hotaru) em Turquesa & Azul Cósmico ---
   class Firefly {
     constructor() {
       this.reset(true);
@@ -145,12 +145,11 @@ document.addEventListener('DOMContentLoaded', () => {
       this.x = Math.random() * width;
       this.y = initial ? Math.random() * height : height + 15;
       this.radius = Math.random() * 2 + 1;
-      this.speedY = -(Math.random() * 0.5 + 0.2); // sobe suavemente
+      this.speedY = -(Math.random() * 0.5 + 0.2);
       this.speedX = (Math.random() - 0.5) * 0.4;
       this.pulseSpeed = Math.random() * 0.03 + 0.015;
       this.pulsePhase = Math.random() * Math.PI * 2;
-      // Tons alternados entre ciano suave e rosa blush
-      this.isCyan = Math.random() > 0.5;
+      this.isAqua = Math.random() > 0.4;
     }
 
     update() {
@@ -172,14 +171,14 @@ document.addEventListener('DOMContentLoaded', () => {
         this.x, this.y, this.radius * 4
       );
 
-      if (this.isCyan) {
+      if (this.isAqua) {
+        grad.addColorStop(0, `rgba(0, 206, 200, ${alpha})`);
+        grad.addColorStop(0.5, `rgba(0, 206, 200, ${alpha * 0.35})`);
+        grad.addColorStop(1, 'rgba(0, 206, 200, 0)');
+      } else {
         grad.addColorStop(0, `rgba(56, 189, 248, ${alpha})`);
         grad.addColorStop(0.5, `rgba(56, 189, 248, ${alpha * 0.3})`);
         grad.addColorStop(1, 'rgba(56, 189, 248, 0)');
-      } else {
-        grad.addColorStop(0, `rgba(251, 113, 133, ${alpha})`);
-        grad.addColorStop(0.5, `rgba(251, 113, 133, ${alpha * 0.3})`);
-        grad.addColorStop(1, 'rgba(251, 113, 133, 0)');
       }
 
       ctx.fillStyle = grad;
@@ -201,13 +200,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!isRunning) return;
     ctx.clearRect(0, 0, width, height);
 
-    // Desenha vagalumes de luz ascendentes
     for (let i = 0; i < fireflies.length; i++) {
       fireflies[i].update();
       fireflies[i].draw();
     }
 
-    // Desenha pétalas de cerejeira descendentes
     for (let i = 0; i < petals.length; i++) {
       petals[i].update();
       petals[i].draw();
