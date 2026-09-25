@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('sakura-canvas');
   if (!canvas) return;
 
-  // Verifica preferência do usuário por redução de movimento
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     return;
   }
@@ -80,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
     height = canvas.height = window.innerHeight;
   });
 
-  // Quantidade discreta para manter performance e elegância sem distrair
   const TOTAL_PETALS = Math.min(25, Math.floor(window.innerWidth / 50));
   const petals = [];
 
@@ -92,14 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
     reset(initial = false) {
       this.x = Math.random() * width;
       this.y = initial ? Math.random() * height : -20;
-      this.size = Math.random() * 8 + 7; // 7px a 15px
-      this.speedY = Math.random() * 0.9 + 0.5; // queda suave
-      this.speedX = Math.random() * 0.8 + 0.3; // brisa lateral
+      this.size = Math.random() * 8 + 7;
+      this.speedY = Math.random() * 0.9 + 0.5;
+      this.speedX = Math.random() * 0.8 + 0.3;
       this.rotation = Math.random() * Math.PI * 2;
       this.rotationSpeed = (Math.random() - 0.5) * 0.02;
       this.oscillationSpeed = Math.random() * 0.02 + 0.01;
       this.oscillationPhase = Math.random() * Math.PI * 2;
-      // Variações de rosa claro translúcido
       this.color = Math.random() > 0.4 
         ? 'rgba(251, 182, 206, ' + (Math.random() * 0.35 + 0.3) + ')' 
         : 'rgba(244, 114, 182, ' + (Math.random() * 0.3 + 0.25) + ')';
@@ -111,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
       this.x += this.speedX + Math.sin(this.oscillationPhase) * 0.6;
       this.rotation += this.rotationSpeed;
 
-      // Se sair da tela, reinicia no topo
       if (this.y > height + 20 || this.x > width + 20) {
         this.reset();
       }
@@ -124,7 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       ctx.fillStyle = this.color;
       ctx.beginPath();
-      // Desenho suave da pétala de cerejeira
       ctx.moveTo(0, -this.size / 2);
       ctx.bezierCurveTo(this.size / 2, -this.size / 3, this.size / 2, this.size / 2, 0, this.size);
       ctx.bezierCurveTo(-this.size / 2, this.size / 2, -this.size / 2, -this.size / 3, 0, -this.size / 2);
@@ -155,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   render();
 
-  // Pausa a animação quando a aba não estiver visível para economizar bateria/processamento
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
       isRunning = false;
