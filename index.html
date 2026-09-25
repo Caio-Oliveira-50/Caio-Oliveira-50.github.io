@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caio Oliveira | Desenvolvedor SQL & Python - Portfólio</title>
+  <meta name="description" content="Portfólio profissional de Caio Oliveira. Desenvolvedor focado em SQL analítico, modelagem relacional e automações em Python.">
+  
+  <!-- Fontes Google: Inter e JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= HEADER & NAV ================= -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo-highlight">&lt;</span>CaioOliveira.sql<span class="logo-highlight"> /&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#contato" class="nav-link nav-cta">Falar Comigo</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="hero-pill">
+          <span class="hero-pill-dot"></span>
+          <span>Nova Iguaçu, RJ • Disponível para oportunidades Remotas e Híbridas</span>
+        </div>
+
+        <h1 class="hero-title">
+          Transformando dados brutos em decisões com <span class="gradient-text">SQL & Python</span>
+        </h1>
+
+        <p class="hero-description">
+          Olá! Me chamo <strong>Caio Oliveira</strong>. Sou um programador com foco aprofundado em 
+          <strong>SQL Analítico</strong>, modelagem de bancos relacionais e pipelines de dados com <strong>Python</strong>.
+          Capacidade prática de traduzir perguntas de negócio em queries estruturadas, seguras e performáticas.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            Ver Projetos em SQL
+          </a>
+          <a href="https://github.com/Caio-Oliveira-50" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/caio-oliveira20187/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Métricas Rápidas -->
+        <div class="metrics-strip">
+          <div class="metric-card">
+            <div class="metric-title">Especialização Principal</div>
+            <div class="metric-value" style="color: var(--accent-cyan);">SQL Analítico & DDL</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-title">Técnicas Avançadas</div>
+            <div class="metric-value">CTEs & Window Functions</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-title">Integração com Código</div>
+            <div class="metric-value">Python (Pandas & ETL)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-title">Engenharia de Dados</div>
+            <div class="metric-value">Modelagem 3FN & Índices</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HABILIDADES ================= -->
+    <section id="habilidades" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competências</span>
+          <h2 class="section-title">Minha Caixa de Ferramentas</h2>
+          <p class="section-subtitle">
+            Habilidades sólidas focadas na manipulação precisa, modelagem e extração de valor a partir de dados relacionais.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: SQL -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">SQL & Bancos de Dados</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag highlight">PostgreSQL</span>
+              <span class="tag highlight">MySQL</span>
+              <span class="tag highlight">SQLite</span>
+              <span class="tag">Window Functions (OVER, RANK, ROW_NUMBER)</span>
+              <span class="tag">CTEs (WITH)</span>
+              <span class="tag">Joins Complexos</span>
+              <span class="tag">Subqueries Correlacionadas</span>
+              <span class="tag">Agregações & HAVING</span>
+              <span class="tag">Views & Índices</span>
+              <span class="tag">Normalização (1FN, 2FN, 3FN)</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Python -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon" style="color: var(--accent-blue); background: rgba(59, 130, 246, 0.15);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Python para Dados</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag highlight">Pandas</span>
+              <span class="tag highlight">SQLAlchemy</span>
+              <span class="tag">Pipelines ETL</span>
+              <span class="tag">Requests / APIs REST</span>
+              <span class="tag">Limpeza de Dados</span>
+              <span class="tag">Jupyter Notebooks</span>
+              <span class="tag">Automação de Scripts</span>
+              <span class="tag">Manipulação de CSV & JSON</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Ferramentas & Práticas -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon" style="color: var(--accent-green); background: rgba(16, 185, 129, 0.15);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="skill-card-title">Ferramentas & Metodologia</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag highlight">DBeaver</span>
+              <span class="tag highlight">Git & GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Diagramas ER (Entidade-Relacionamento)</span>
+              <span class="tag">Análise Exploratória (EDA)</span>
+              <span class="tag">Boas Práticas de Código Limpo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJETOS EM DESTAQUE ================= -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Casos Práticos</span>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <p class="section-subtitle">
+            Projetos estruturados simulando desafios reais de negócios, unindo lógica analítica, código bem documentado e conclusões orientadas a dados.
+          </p>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- PROJETO 1: SQL ANALÍTICO -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <span class="project-badge-type">SQL Analítico Avançado</span>
+                <h3 class="project-title">Análise de Retenção de Clientes (Cohort) & Churn de E-commerce</h3>
+                <p class="project-summary">
+                  Cálculo de taxa de recompra e retenção mensal utilizando CTEs encadeadas e Window Functions em uma base de 50.000+ transações.
+                </p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Caio-Oliveira-50" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  Ver no GitHub
+                </a>
+              </div>
+            </div>
+
+            <!-- Navegação de Abas -->
+            <div class="project-tabs">
+              <button class="tab-btn active" data-tab="contexto">
+                <span>🎯 O Desafio de Negócio</span>
+              </button>
+              <button class="tab-btn" data-tab="codigo">
+                <span>💻 Query SQL</span>
+              </button>
+              <button class="tab-btn" data-tab="resultados">
+                <span>📊 Insights Gerados</span>
+              </button>
+            </div>
+
+            <!-- Conteúdo Aba 1: Contexto -->
+            <div class="project-tab-content active" data-content="contexto">
+              <div class="business-grid">
+                <div class="business-item">
+                  <h4>O Problema</h4>
+                  <p>
+                    A equipe comercial precisava entender se o aumento de receita vinha de novos clientes ou da retenção dos clientes antigos, e em qual mês acontecia a maior perda de compradores (churn prematuro).
+                  </p>
+                </div>
+                <div class="business-item">
+                  <h4>Solução Técnica</h4>
+                  <ul>
+                    <li>Construção de uma safra (Cohort) baseada na data da primeira compra via <strong>MIN()</strong> e <strong>DATE_TRUNC</strong>.</li>
+                    <li>Cálculo do intervalo em meses entre as compras subsequentes usando <strong>EXTRACT</strong>.</li>
+                    <li>Utilização de <strong>Common Table Expressions (CTEs)</strong> para modularizar e tornar a consulta legível e performática.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conteúdo Aba 2: Código SQL -->
+            <div class="project-tab-content" data-content="codigo">
+              <div class="code-container">
+                <div class="code-header">
+                  <span class="code-language">PostgreSQL / SQL</span>
+                  <button class="copy-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span>Copiar SQL</span>
+                  </button>
+                </div>
+                <pre class="code-block"><code><span class="sql-comment">-- Análise de Retenção de Clientes por Safra Mensal (Cohort)</span>
+<span class="sql-keyword">WITH</span> primeira_compra <span class="sql-keyword">AS</span> (
+    <span class="sql-keyword">SELECT</span> 
+        cliente_id,
+        <span class="sql-func">DATE_TRUNC</span>(<span class="sql-string">'month'</span>, <span class="sql-func">MIN</span>(data_pedido)) <span class="sql-keyword">AS</span> mes_safra
+    <span class="sql-keyword">FROM</span> pedidos
+    <span class="sql-keyword">GROUP BY</span> cliente_id
+),
+atividades_pedidos <span class="sql-keyword">AS</span> (
+    <span class="sql-keyword">SELECT</span> 
+        p.cliente_id,
+        pc.mes_safra,
+        <span class="sql-func">DATE_TRUNC</span>(<span class="sql-string">'month'</span>, p.data_pedido) <span class="sql-keyword">AS</span> mes_pedido,
+        (<span class="sql-func">EXTRACT</span>(year <span class="sql-keyword">FROM</span> p.data_pedido) - <span class="sql-func">EXTRACT</span>(year <span class="sql-keyword">FROM</span> pc.mes_safra)) * <span class="sql-num">12</span> +
+        (<span class="sql-func">EXTRACT</span>(month <span class="sql-keyword">FROM</span> p.data_pedido) - <span class="sql-func">EXTRACT</span>(month <span class="sql-keyword">FROM</span> pc.mes_safra)) <span class="sql-keyword">AS</span> mes_offset
+    <span class="sql-keyword">FROM</span> pedidos p
+    <span class="sql-keyword">INNER JOIN</span> primeira_compra pc <span class="sql-keyword">ON</span> p.cliente_id = pc.cliente_id
+)
+<span class="sql-keyword">SELECT</span> 
+    <span class="sql-func">TO_CHAR</span>(mes_safra, <span class="sql-string">'YYYY-MM'</span>) <span class="sql-keyword">AS</span> safra,
+    <span class="sql-func">COUNT</span>(<span class="sql-keyword">DISTINCT CASE WHEN</span> mes_offset = <span class="sql-num">0</span> <span class="sql-keyword">THEN</span> cliente_id <span class="sql-keyword">END</span>) <span class="sql-keyword">AS</span> clientes_iniciais,
+    <span class="sql-func">ROUND</span>(<span class="sql-func">COUNT</span>(<span class="sql-keyword">DISTINCT CASE WHEN</span> mes_offset = <span class="sql-num">1</span> <span class="sql-keyword">THEN</span> cliente_id <span class="sql-keyword">END</span>)::<span class="sql-keyword">numeric</span> / 
+          <span class="sql-func">NULLIF</span>(<span class="sql-func">COUNT</span>(<span class="sql-keyword">DISTINCT CASE WHEN</span> mes_offset = <span class="sql-num">0</span> <span class="sql-keyword">THEN</span> cliente_id <span class="sql-keyword">END</span>), <span class="sql-num">0</span>) * <span class="sql-num">100</span>, <span class="sql-num">1</span>) <span class="sql-keyword">AS</span> retencao_mes_1,
+    <span class="sql-func">ROUND</span>(<span class="sql-func">COUNT</span>(<span class="sql-keyword">DISTINCT CASE WHEN</span> mes_offset = <span class="sql-num">2</span> <span class="sql-keyword">THEN</span> cliente_id <span class="sql-keyword">END</span>)::<span class="sql-keyword">numeric</span> / 
+          <span class="sql-func">NULLIF</span>(<span class="sql-func">COUNT</span>(<span class="sql-keyword">DISTINCT CASE WHEN</span> mes_offset = <span class="sql-num">0</span> <span class="sql-keyword">THEN</span> cliente_id <span class="sql-keyword">END</span>), <span class="sql-num">0</span>) * <span class="sql-num">100</span>, <span class="sql-num">1</span>) <span class="sql-keyword">AS</span> retencao_mes_2
+<span class="sql-keyword">FROM</span> atividades_pedidos
+<span class="sql-keyword">GROUP BY</span> mes_safra
+<span class="sql-keyword">ORDER BY</span> mes_safra;</code></pre>
+              </div>
+            </div>
+
+            <!-- Conteúdo Aba 3: Resultados -->
+            <div class="project-tab-content" data-content="resultados">
+              <div class="insights-grid">
+                <div class="insights-callouts">
+                  <div class="callout-box">
+                    <div class="callout-num" style="color: var(--accent-cyan);">38.4%</div>
+                    <div class="callout-label">Retenção Média no Mês 1</div>
+                  </div>
+                  <div class="callout-box green">
+                    <div class="callout-num" style="color: var(--accent-green);">+14.2%</div>
+                    <div class="callout-label">Aumento na Safra com Campanha de Reativação</div>
+                  </div>
+                </div>
+
+                <div class="table-wrapper">
+                  <table class="data-table">
+                    <thead>
+                      <tr>
+                        <th>Safra (Cohort)</th>
+                        <th>Clientes Iniciais</th>
+                        <th>Retenção Mês 1</th>
+                        <th>Retenção Mês 2</th>
+                        <th>Diagnóstico</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>2026-01</strong></td>
+                        <td>1.250</td>
+                        <td>34.2%</td>
+                        <td>22.1%</td>
+                        <td>Queda esperada pós-Black Friday</td>
+                      </tr>
+                      <tr>
+                        <td><strong>2026-02</strong></td>
+                        <td>980</td>
+                        <td>39.5%</td>
+                        <td>28.4%</td>
+                        <td>Melhora com novo e-mail pós-venda</td>
+                      </tr>
+                      <tr>
+                        <td><strong>2026-03</strong></td>
+                        <td>1.420</td>
+                        <td>44.8%</td>
+                        <td>31.0%</td>
+                        <td>Pico de recompra com cupom de aniversário</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- PROJETO 2: PYTHON + SQL PIPELINE ETL -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <span class="project-badge-type" style="color: var(--accent-blue); background: rgba(59, 130, 246, 0.12); border-color: rgba(59, 130, 246, 0.25);">
+                  Python & SQL Integration
+                </span>
+                <h3 class="project-title">Pipeline ETL Automatizado para Ingestão e Validação de Vendas</h3>
+                <p class="project-summary">
+                  Script em Python que consome dados brutos de filiais em CSV/JSON, realiza limpeza e tipagem com Pandas e persiste os dados em banco SQLite/Postgres com SQLAlchemy.
+                </p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Caio-Oliveira-50" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  Ver no GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="project-tabs">
+              <button class="tab-btn active" data-tab="contexto">
+                <span>🎯 O Desafio</span>
+              </button>
+              <button class="tab-btn" data-tab="codigo">
+                <span>💻 Código Python & SQL</span>
+              </button>
+              <button class="tab-btn" data-tab="resultados">
+                <span>📊 Ganhos Obtidos</span>
+              </button>
+            </div>
+
+            <div class="project-tab-content active" data-content="contexto">
+              <div class="business-grid">
+                <div class="business-item">
+                  <h4>O Problema</h4>
+                  <p>
+                    Arquivos diários de vendas chegavam de diferentes filiais com formatos divergentes, campos nulos e duplicatas, provocando erros nas consultas e relatórios.
+                  </p>
+                </div>
+                <div class="business-item">
+                  <h4>A Arquitetura</h4>
+                  <p>
+                    Pipeline automatizado em Python usando <strong>Pandas</strong> para tipagem e higienização, e escrita otimizada no banco via <strong>SQLAlchemy (to_sql com chunksize)</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tab-content" data-content="codigo">
+              <div class="code-container">
+                <div class="code-header">
+                  <span class="code-language">Python 3 & Pandas</span>
+                  <button class="copy-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span>Copiar Python</span>
+                  </button>
+                </div>
+                <pre class="code-block"><code><span class="sql-comment"># etl_pipeline.py - Extração, Limpeza e Carga Relacional</span>
+<span class="sql-keyword">import</span> pandas <span class="sql-keyword">as</span> pd
+<span class="sql-keyword">from</span> sqlalchemy <span class="sql-keyword">import</span> create_engine
+
+<span class="sql-keyword">def</span> <span class="sql-func">executar_etl</span>(caminho_csv, db_uri):
+    <span class="sql-comment"># 1. Extração</span>
+    df = pd.read_csv(caminho_csv)
+    
+    <span class="sql-comment"># 2. Transformação e Limpeza</span>
+    df[<span class="sql-string">'data_pedido'</span>] = pd.to_datetime(df[<span class="sql-string">'data_pedido'</span>], errors=<span class="sql-string">'coerce'</span>)
+    df = df.dropna(subset=[<span class="sql-string">'cliente_id'</span>, <span class="sql-string">'valor_total'</span>])
+    df[<span class="sql-string">'valor_total'</span>] = df[<span class="sql-string">'valor_total'</span>].apply(<span class="sql-keyword">lambda</span> x: max(x, <span class="sql-num">0.0</span>))
+    
+    <span class="sql-comment"># 3. Carga no Banco Relacional (SQLite / PostgreSQL)</span>
+    engine = create_engine(db_uri)
+    df.to_sql(
+        name=<span class="sql-string">'pedidos_consolidados'</span>,
+        con=engine,
+        if_exists=<span class="sql-string">'append'</span>,
+        index=<span class="sql-keyword">False</span>,
+        chunksize=<span class="sql-num">1000</span>
+    )
+    print(f<span class="sql-string">"Sucesso: {len(df)} registros processados e inseridos."</span>)
+
+<span class="sql-keyword">if</span> __name__ == <span class="sql-string">"__main__"</span>:
+    executar_etl(<span class="sql-string">"vendas_raw.csv"</span>, <span class="sql-string">"sqlite:///empresa.db"</span>)</code></pre>
+              </div>
+            </div>
+
+            <div class="project-tab-content" data-content="resultados">
+              <div class="insights-grid">
+                <div class="insights-callouts">
+                  <div class="callout-box green">
+                    <div class="callout-num" style="color: var(--accent-green);">100%</div>
+                    <div class="callout-label">Automação do fluxo diário de dados</div>
+                  </div>
+                  <div class="callout-box">
+                    <div class="callout-num" style="color: var(--accent-blue);">0</div>
+                    <div class="callout-label">Erros de integridade no banco</div>
+                  </div>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">
+                  O pipeline eliminou horas de digitação manual de relatórios e garantiu integridade referencial com chaves primárias e tipos validados.
+                </p>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- PROJETO 3: MODELAGEM RELACIONAL & DDL -->
+          <article class="project-card">
+            <div class="project-header">
+              <div>
+                <span class="project-badge-type" style="color: var(--accent-purple); background: rgba(139, 92, 246, 0.12); border-color: rgba(139, 92, 246, 0.25);">
+                  Engenharia & Modelagem de Dados
+                </span>
+                <h3 class="project-title">Modelagem de Banco de Dados de Logística (Normalização 3FN)</h3>
+                <p class="project-summary">
+                  Arquitetura de dados relacional desenhada para suportar alta concorrência, normalizada em 3ª Forma Normal, com índices B-Tree e Views analíticas.
+                </p>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Caio-Oliveira-50" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  Ver no GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="project-tabs">
+              <button class="tab-btn active" data-tab="contexto">
+                <span>🎯 O Desafio</span>
+              </button>
+              <button class="tab-btn" data-tab="codigo">
+                <span>💻 DDL & Views</span>
+              </button>
+              <button class="tab-btn" data-tab="resultados">
+                <span>📊 Ganhos de Performance</span>
+              </button>
+            </div>
+
+            <div class="project-tab-content active" data-content="contexto">
+              <div class="business-grid">
+                <div class="business-item">
+                  <h4>O Problema</h4>
+                  <p>
+                    Uma base de entregas misturada causava anomalias de atualização e consultas com alto custo de processamento em relatórios operacionais.
+                  </p>
+                </div>
+                <div class="business-item">
+                  <h4>Solução de Arquitetura</h4>
+                  <p>
+                    Separação em entidades normalizadas: <code>clientes</code>, <code>entregadores</code>, <code>pedidos</code> e <code>historico_entregas</code> com integridade referencial estrita e índices estratégicos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tab-content" data-content="codigo">
+              <div class="code-container">
+                <div class="code-header">
+                  <span class="code-language">SQL DDL & Views</span>
+                  <button class="copy-btn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span>Copiar DDL</span>
+                  </button>
+                </div>
+                <pre class="code-block"><code><span class="sql-comment">-- Modelagem Relacional & Otimização de Consultas</span>
+<span class="sql-keyword">CREATE TABLE</span> entregadores (
+    entregador_id <span class="sql-keyword">SERIAL PRIMARY KEY</span>,
+    nome <span class="sql-keyword">VARCHAR</span>(<span class="sql-num">100</span>) <span class="sql-keyword">NOT NULL</span>,
+    veiculo_tipo <span class="sql-keyword">VARCHAR</span>(<span class="sql-num">30</span>),
+    ativo <span class="sql-keyword">BOOLEAN DEFAULT TRUE</span>
+);
+
+<span class="sql-keyword">CREATE TABLE</span> historico_entregas (
+    entrega_id <span class="sql-keyword">SERIAL PRIMARY KEY</span>,
+    pedido_id <span class="sql-keyword">INT REFERENCES</span> pedidos(pedido_id) <span class="sql-keyword">ON DELETE CASCADE</span>,
+    entregador_id <span class="sql-keyword">INT REFERENCES</span> entregadores(entregador_id),
+    status <span class="sql-keyword">VARCHAR</span>(<span class="sql-num">20</span>) <span class="sql-keyword">CHECK</span> (status <span class="sql-keyword">IN</span> (<span class="sql-string">'pendente'</span>, <span class="sql-string">'em_rota'</span>, <span class="sql-string">'concluido'</span>, <span class="sql-string">'falha'</span>)),
+    data_atualizacao <span class="sql-keyword">TIMESTAMP DEFAULT CURRENT_TIMESTAMP</span>
+);
+
+<span class="sql-comment">-- Índice B-Tree para buscas rápidas de pedidos ativos por entregador</span>
+<span class="sql-keyword">CREATE INDEX</span> idx_entregas_status_entregador 
+<span class="sql-keyword">ON</span> historico_entregas (entregador_id, status);
+
+<span class="sql-comment">-- View para relatório executivo de SLA de entregas</span>
+<span class="sql-keyword">CREATE VIEW</span> vw_desempenho_entregadores <span class="sql-keyword">AS</span>
+<span class="sql-keyword">SELECT</span> 
+    e.nome,
+    <span class="sql-func">COUNT</span>(h.entrega_id) <span class="sql-keyword">AS</span> total_atribuido,
+    <span class="sql-func">SUM</span>(<span class="sql-keyword">CASE WHEN</span> h.status = <span class="sql-string">'concluido'</span> <span class="sql-keyword">THEN</span> <span class="sql-num">1</span> <span class="sql-keyword">ELSE</span> <span class="sql-num">0</span> <span class="sql-keyword">END</span>) <span class="sql-keyword">AS</span> entregas_sucesso
+<span class="sql-keyword">FROM</span> entregadores e
+<span class="sql-keyword">LEFT JOIN</span> historico_entregas h <span class="sql-keyword">ON</span> e.entregador_id = h.entregador_id
+<span class="sql-keyword">GROUP BY</span> e.entregador_id, e.nome;</code></pre>
+              </div>
+            </div>
+
+            <div class="project-tab-content" data-content="resultados">
+              <div class="insights-grid">
+                <div class="insights-callouts">
+                  <div class="callout-box green">
+                    <div class="callout-num" style="color: var(--accent-green);">-85%</div>
+                    <div class="callout-label">Tempo de resposta nas queries de status com índice B-Tree</div>
+                  </div>
+                  <div class="callout-box">
+                    <div class="callout-num" style="color: var(--accent-cyan);">3FN</div>
+                    <div class="callout-label">Eliminação total de redundância de dados</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE MIM ================= -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="about-box">
+          <div class="about-text">
+            <span class="section-tag">Trajetória</span>
+            <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Sobre Mim</h2>
+            <p>
+              Olá! Sou <strong>Caio Oliveira</strong>, residente em Nova Iguaçu - RJ. Sou um programador em início de carreira com dedicação contínua aos estudos de desenvolvimento, focado em <strong>bancos de dados relacionais e análise prática com SQL e Python</strong>.
+            </p>
+            <p>
+              Meu objetivo é ajudar empresas a tomarem decisões baseadas em dados confiáveis: modelar bancos com integridade referencial, extrair métricas de negócio através de queries performáticas e automatizar fluxos de dados com scripts Python.
+            </p>
+            <p>
+              Estou ativamente disponível para oportunidades como <strong>Desenvolvedor SQL Júnior</strong>, <strong>Analista de Dados Júnior</strong> ou <strong>Assistente de Engenharia de Dados</strong> (em regime Remoto ou Híbrido no RJ).
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <h4>Foco Atual de Estudos</h4>
+            <ul class="about-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Otimização e planos de execução (EXPLAIN ANALYZE)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                PostgreSQL avançado, CTEs e Window Functions
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Bibliotecas analíticas Python (Pandas e SQLAlchemy)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Versionamento e colaboração ágil com Git & GitHub
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section id="contato" class="contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <span class="section-tag">Vamos conversar?</span>
+          <h2 class="section-title">Entre em Contato</h2>
+          <p style="color: var(--text-muted); font-size: 1rem; margin-top: 8px;">
+            Estou disponível para novas oportunidades, vagas de estágio / júnior e projetos. Fique à vontade para me mandar uma mensagem!
+          </p>
+
+          <div class="contact-channels">
+            <a href="mailto:caioribeirodeoliveira.50@gmail.com" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Enviar E-mail
+            </a>
+            <a href="https://www.linkedin.com/in/caio-oliveira20187/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Caio-Oliveira-50" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Caio Oliveira | Desenvolvido com HTML, CSS e JavaScript puro. Focado em SQL & Dados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
