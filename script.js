@@ -1,11 +1,41 @@
 /**
- * Portfolio SQL & Python - Interações & Efeitos Zen Cyber-Jade (#00CEC8)
- * Animação de Pétalas Luminosas e Vagalumes (Hotaru)
+ * Portfolio SQL & Python - Interações, Scroll Reveal & Caixas Dinâmicas
+ * Caio Oliveira | Engenheiro de Dados Júnior
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
-  // 1. Gerenciamento de Abas dos Projetos (Desafio / Código / Resultados)
+  // 1. Scroll Reveal Suave e Confortável
+  // =========================================================================
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+
+  // =========================================================================
+  // 2. Caixas de Habilidades Dinâmicas e Interativas (Clique para Abrir)
+  // =========================================================================
+  const skillAccordions = document.querySelectorAll('[data-skill-accordion]');
+
+  skillAccordions.forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('is-open');
+    });
+  });
+
+  // =========================================================================
+  // 3. Gerenciamento de Abas dos Projetos (Desafio / Código / Resultados)
   // =========================================================================
   const projectCards = document.querySelectorAll('.project-card');
 
@@ -30,12 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 2. Botão de Copiar Código com Feedback Visual (#00CEC8)
+  // 4. Botão de Copiar Código com Feedback Visual (#00CEC8)
   // =========================================================================
   const copyButtons = document.querySelectorAll('.copy-btn');
 
   copyButtons.forEach(btn => {
-    btn.addEventListener('click', async () => {
+    btn.addEventListener('click', async (e) => {
+      e.stopPropagation();
       const codeBlock = btn.closest('.code-container').querySelector('.code-block code');
       if (!codeBlock) return;
 
@@ -62,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 3. Sistema Atmosférico: Pétalas Litorâneas/Jade (#00CEC8) e Hotaru (Vagalumes)
+  // 5. Sistema Atmosférico: Partículas e Vagalumes Turquesa (#00CEC8)
   // =========================================================================
   const canvas = document.getElementById('sakura-canvas');
   if (!canvas) return;
@@ -86,7 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const petals = [];
   const fireflies = [];
 
-  // --- Classe das Pétalas com tons Turquesa / Cyber-Jade (#00CEC8) ---
   class Petal {
     constructor() {
       this.reset(true);
@@ -102,7 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
       this.rotationSpeed = (Math.random() - 0.5) * 0.022;
       this.oscillationSpeed = Math.random() * 0.02 + 0.012;
       this.oscillationPhase = Math.random() * Math.PI * 2;
-      // Variações elegantes de #00CEC8 e turquesa translúcido
       this.color = Math.random() > 0.45 
         ? 'rgba(0, 206, 200, ' + (Math.random() * 0.35 + 0.35) + ')' 
         : 'rgba(94, 234, 212, ' + (Math.random() * 0.3 + 0.28) + ')';
@@ -135,7 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- Classe dos Vagalumes de Luz (Hotaru) em Turquesa & Azul Cósmico ---
   class Firefly {
     constructor() {
       this.reset(true);
