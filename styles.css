@@ -1,10 +1,8 @@
 /* ==========================================================================
    PORTFOLIO SQL & PYTHON - TEMA ZEN ORIENTAL CYBER-JADE (#00CEC8)
-   Harmonia entre elegância artística japonesa e profissionalismo técnico
    ========================================================================== */
 
 :root {
-  /* Paleta Base: Tinta Sumi-e Profunda e Noite Cósmica */
   --bg-primary: #06080e;
   --bg-secondary: #0c101a;
   --bg-card: rgba(13, 17, 28, 0.78);
@@ -14,12 +12,10 @@
   --border-subtle: rgba(255, 255, 255, 0.08);
   --border-focus: #00CEC8;
 
-  /* Tipografia */
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
   --text-subtle: #64748b;
 
-  /* Acentos Turquesa Cyber-Jade (#00CEC8) */
   --cyan-primary: #00CEC8;
   --cyan-vibrant: #22d3ee;
   --cyan-blush: #5eead4;
@@ -28,7 +24,6 @@
   --tech-blue: #60a5fa;
   --tech-emerald: #10b981;
 
-  /* Gradientes Nobres */
   --gradient-cyan: linear-gradient(135deg, #00CEC8 0%, #38bdf8 50%, #818cf8 100%);
   --gradient-badge: linear-gradient(135deg, rgba(0, 206, 200, 0.18) 0%, rgba(56, 189, 248, 0.14) 100%);
   --gradient-hanko: linear-gradient(145deg, #00CEC8, #0d9488);
@@ -84,7 +79,6 @@ body {
   will-change: transform;
 }
 
-/* Orbe 1: Turquesa Vibrante (#00CEC8) no canto superior */
 .orb-1 {
   width: 600px;
   height: 600px;
@@ -94,7 +88,6 @@ body {
   animation-duration: 22s;
 }
 
-/* Orbe 2: Azul Tecnológico no canto inferior direito */
 .orb-2 {
   width: 700px;
   height: 700px;
@@ -105,7 +98,6 @@ body {
   animation-delay: -7s;
 }
 
-/* Orbe 3: Violeta e Azul Cobalto no centro */
 .orb-3 {
   width: 550px;
   height: 550px;
@@ -116,7 +108,6 @@ body {
   animation-delay: -14s;
 }
 
-/* Orbe 4: Verde-Água / Esmeralda Jade à esquerda */
 .orb-4 {
   width: 450px;
   height: 450px;
@@ -127,7 +118,6 @@ body {
   animation-delay: -5s;
 }
 
-/* Círculo Zen Ensō como marca d'água no fundo */
 .enso-symbol {
   position: absolute;
   top: 48%;
@@ -145,32 +135,17 @@ body {
 }
 
 @keyframes floatOrb {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  33% {
-    transform: translate3d(90px, 70px, 0) scale(1.18);
-  }
-  66% {
-    transform: translate3d(-70px, 110px, 0) scale(0.92);
-  }
-  100% {
-    transform: translate3d(50px, -60px, 0) scale(1.08);
-  }
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  33% { transform: translate3d(90px, 70px, 0) scale(1.18); }
+  66% { transform: translate3d(-70px, 110px, 0) scale(0.92); }
+  100% { transform: translate3d(50px, -60px, 0) scale(1.08); }
 }
 
 @keyframes ensoBreathe {
-  0% {
-    transform: translate(-50%, -50%) scale(0.95) rotate(0deg);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1.05) rotate(15deg);
-    opacity: 0.85;
-  }
+  0% { transform: translate(-50%, -50%) scale(0.95) rotate(0deg); opacity: 0.5; }
+  100% { transform: translate(-50%, -50%) scale(1.05) rotate(15deg); opacity: 0.85; }
 }
 
-/* Canvas das Pétalas & Vagalumes Flutuantes */
 #sakura-canvas {
   position: fixed;
   top: 0;
@@ -182,7 +157,6 @@ body {
   opacity: 0.9;
 }
 
-/* Container Principal */
 .container {
   width: 100%;
   max-width: 1120px;
@@ -190,6 +164,21 @@ body {
   padding: 0 24px;
   position: relative;
   z-index: 2;
+}
+
+/* ==========================================================================
+   SCROLL REVEAL (ANIMAÇÃO SUAVE E CONFORTÁVEL)
+   ========================================================================== */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Header & Nav */
@@ -262,7 +251,6 @@ body {
   transform: translateY(-1px);
 }
 
-/* Selo Hanko (Estilo Carimbo Tradicional Japonês Modernizado em Jade #00CEC8) */
 .hanko-seal {
   display: inline-flex;
   align-items: center;
@@ -357,615 +345,3 @@ body {
 
 .btn {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-  padding: 13px 26px;
-  border-radius: var(--radius-md);
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: var(--transition);
-  border: none;
-}
-
-.btn-primary {
-  background: var(--gradient-cyan);
-  color: #06080e;
-  font-weight: 700;
-  box-shadow: 0 6px 24px rgba(0, 206, 200, 0.38);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 206, 200, 0.55);
-}
-
-.btn-secondary {
-  background-color: var(--bg-card);
-  color: var(--text-main);
-  border: 1px solid var(--border-color);
-  backdrop-filter: blur(12px);
-}
-
-.btn-secondary:hover {
-  background-color: var(--bg-card-hover);
-  border-color: var(--cyan-primary);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
-}
-
-/* Faixa de Métricas Rápidas */
-.metrics-strip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.metric-card {
-  background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--border-color);
-  padding: 22px;
-  border-radius: var(--radius-md);
-  text-align: left;
-  transition: var(--transition);
-}
-
-.metric-card:hover {
-  border-color: rgba(0, 206, 200, 0.45);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.3);
-}
-
-.metric-title {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.metric-value {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--text-main);
-}
-
-/* Divisores Sutis Estilo Zen */
-.zen-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin: 20px auto 40px;
-  opacity: 0.75;
-}
-
-.zen-line {
-  width: 60px;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--cyan-primary), transparent);
-}
-
-.zen-dot {
-  color: var(--cyan-primary);
-  font-size: 0.85rem;
-}
-
-/* Seções Gerais */
-.section {
-  padding: 80px 0;
-  position: relative;
-}
-
-.section-header {
-  margin-bottom: 48px;
-  text-align: center;
-}
-
-.section-tag {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  color: var(--cyan-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-weight: 600;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.section-title {
-  font-size: 2.3rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 12px;
-}
-
-.section-subtitle {
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  max-width: 620px;
-  margin: 0 auto;
-}
-
-/* Grade de Habilidades */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 26px;
-}
-
-.skill-card {
-  background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 30px;
-  transition: var(--transition);
-}
-
-.skill-card:hover {
-  border-color: rgba(0, 206, 200, 0.45);
-  transform: translateY(-5px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
-}
-
-.skill-card-header {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 20px;
-}
-
-.skill-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--gradient-badge);
-  color: var(--cyan-primary);
-  font-size: 1.3rem;
-  border: 1px solid rgba(0, 206, 200, 0.3);
-}
-
-.skill-card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.tag {
-  font-size: 0.82rem;
-  padding: 5px 13px;
-  border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
-  font-weight: 500;
-  transition: var(--transition);
-}
-
-.tag.highlight {
-  background: rgba(0, 206, 200, 0.12);
-  border-color: rgba(0, 206, 200, 0.35);
-  color: var(--cyan-blush);
-}
-
-.tag:hover {
-  border-color: var(--cyan-primary);
-  color: #fff;
-}
-
-/* Vitrine de Projetos */
-.projects-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.project-card {
-  background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  transition: var(--transition);
-}
-
-.project-card:hover {
-  border-color: rgba(0, 206, 200, 0.45);
-  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.4);
-}
-
-.project-header {
-  padding: 30px 34px;
-  border-bottom: 1px solid var(--border-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.project-badge-type {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--cyan-primary);
-  background: rgba(0, 206, 200, 0.12);
-  border: 1px solid rgba(0, 206, 200, 0.35);
-  padding: 4px 12px;
-  border-radius: 9999px;
-  margin-bottom: 10px;
-  display: inline-block;
-  font-weight: 600;
-}
-
-.project-title {
-  font-size: 1.45rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.project-summary {
-  color: var(--text-muted);
-  font-size: 0.96rem;
-  max-width: 680px;
-}
-
-.project-links {
-  display: flex;
-  gap: 12px;
-}
-
-.project-link-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 0.85rem;
-  color: var(--text-main);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-color);
-  padding: 9px 16px;
-  border-radius: var(--radius-sm);
-  text-decoration: none;
-  font-weight: 500;
-  transition: var(--transition);
-}
-
-.project-link-btn:hover {
-  background: rgba(0, 206, 200, 0.15);
-  border-color: var(--cyan-primary);
-  color: #fff;
-  box-shadow: 0 0 14px rgba(0, 206, 200, 0.25);
-}
-
-/* Abas Interativas dos Projetos */
-.project-tabs {
-  display: flex;
-  background: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid var(--border-color);
-  padding: 0 34px;
-  gap: 22px;
-}
-
-.tab-btn {
-  background: transparent;
-  border: none;
-  padding: 15px 4px;
-  color: var(--text-muted);
-  font-size: 0.92rem;
-  font-weight: 600;
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-  transition: var(--transition);
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.tab-btn:hover {
-  color: var(--cyan-blush);
-}
-
-.tab-btn.active {
-  color: var(--cyan-primary);
-  border-bottom-color: var(--cyan-primary);
-  text-shadow: 0 0 10px rgba(0, 206, 200, 0.4);
-}
-
-.project-tab-content {
-  padding: 30px 34px;
-  display: none;
-}
-
-.project-tab-content.active {
-  display: block;
-}
-
-/* Aba 1: Contexto de Negócio */
-.business-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
-.business-item {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 22px;
-}
-
-.business-item h4 {
-  font-size: 1.02rem;
-  margin-bottom: 10px;
-  color: var(--cyan-blush);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.business-item p, .business-item ul {
-  font-size: 0.92rem;
-  color: var(--text-muted);
-}
-
-.business-item ul {
-  padding-left: 20px;
-  margin-top: 6px;
-}
-
-.business-item li {
-  margin-bottom: 6px;
-}
-
-/* Aba 2: Terminal de Código */
-.code-container {
-  background: var(--bg-code);
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-color);
-  overflow: hidden;
-  box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
-}
-
-.code-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 18px;
-  background: rgba(255, 255, 255, 0.03);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.code-language {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--cyan-primary);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.copy-btn {
-  background: transparent;
-  border: 1px solid var(--border-color);
-  color: var(--text-muted);
-  padding: 5px 12px;
-  border-radius: var(--radius-sm);
-  font-size: 0.78rem;
-  cursor: pointer;
-  transition: var(--transition);
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.copy-btn:hover {
-  background: rgba(0, 206, 200, 0.15);
-  color: var(--cyan-blush);
-  border-color: var(--cyan-primary);
-}
-
-.code-block {
-  padding: 20px 22px;
-  overflow-x: auto;
-  font-family: var(--font-mono);
-  font-size: 0.86rem;
-  line-height: 1.65;
-  color: #e2e8f0;
-}
-
-/* Cores da Sintaxe SQL */
-.sql-keyword { color: #22d3ee; font-weight: 600; }
-.sql-func { color: #38bdf8; font-weight: 600; }
-.sql-string { color: #6ee7b7; }
-.sql-comment { color: #64748b; font-style: italic; }
-.sql-num { color: #f59e0b; }
-
-/* Aba 3: Insights & Tabela */
-.insights-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.insights-callouts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-}
-
-.callout-box {
-  background: rgba(0, 206, 200, 0.07);
-  border: 1px solid rgba(0, 206, 200, 0.28);
-  padding: 18px;
-  border-radius: var(--radius-md);
-}
-
-.callout-box.green {
-  background: rgba(16, 185, 129, 0.07);
-  border-color: rgba(16, 185, 129, 0.28);
-}
-
-.callout-num {
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 4px;
-}
-
-.callout-label {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.table-wrapper {
-  overflow-x: auto;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-}
-
-.data-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.86rem;
-  text-align: left;
-}
-
-.data-table th {
-  background: rgba(255, 255, 255, 0.04);
-  padding: 12px 16px;
-  color: var(--cyan-blush);
-  font-weight: 600;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.data-table td {
-  padding: 12px 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-  color: var(--text-main);
-}
-
-.data-table tr:hover td {
-  background: rgba(0, 206, 200, 0.05);
-}
-
-/* Sobre Mim */
-.about-box {
-  background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 38px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 36px;
-  align-items: center;
-}
-
-.about-text p {
-  color: var(--text-muted);
-  font-size: 1.02rem;
-  margin-bottom: 16px;
-}
-
-.about-highlights {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  padding: 26px;
-}
-
-.about-highlights h4 {
-  font-size: 1.05rem;
-  margin-bottom: 14px;
-  color: var(--cyan-blush);
-}
-
-.about-list {
-  list-style: none;
-}
-
-.about-list li {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Contato / CTA Final */
-.contact-section {
-  text-align: center;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 206, 200, 0.08) 100%);
-  border-top: 1px solid var(--border-color);
-  padding: 95px 0;
-  position: relative;
-}
-
-.contact-card {
-  max-width: 620px;
-  margin: 0 auto;
-  background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 44px 34px;
-}
-
-.contact-channels {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-
-.footer {
-  border-top: 1px solid var(--border-color);
-  padding: 32px 0;
-  text-align: center;
-  color: var(--text-subtle);
-  font-size: 0.85rem;
-  background-color: var(--bg-primary);
-  position: relative;
-  z-index: 2;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.3rem;
-  }
-  .nav-links {
-    display: none;
-  }
-  .business-grid, .about-box {
-    grid-template-columns: 1fr;
-  }
-  .project-header {
-    flex-direction: column;
-    padding: 20px;
-  }
-  .project-tabs {
-    padding: 0 16px;
-    overflow-x: auto;
-  }
-  .project-tab-content {
-    padding: 20px 16px;
-  }
-}
